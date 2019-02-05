@@ -7,7 +7,7 @@
  */
  
 html {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
     min-height: 100%;
@@ -17,7 +17,7 @@ body {
     color: #8a8888;
     font-size: 0.85rem;
     line-height: 1.571;
-    height: 2050px;
+    /* height: 2050px; */
     margin-bottom: 63px;
 }
 
@@ -40,9 +40,6 @@ body {
 
 
 
- /**
- * Logo & Navigation
- */
 
 
  /**
@@ -71,6 +68,9 @@ body {
 }
 
 
+ /**
+ * Logo & Navigation
+ */
 
 .logo {
     margin: auto;
@@ -78,6 +78,7 @@ body {
     width: 940px;
     height: 110px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .display {
     width: auto;
@@ -106,7 +107,8 @@ body {
     display: flex;
     align-items: center;
     border-top: 1px solid #dadada;
-    margin: auto;
+    margin: auto !important;
+    
 }
 .nav h6 {
     display: inline-block;
