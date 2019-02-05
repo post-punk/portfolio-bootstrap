@@ -1,0 +1,151 @@
+* { outline: 1px solid teal; }
+
+
+
+/**
+ * General
+ */
+ 
+html {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+body {   
+    font-family: Arial, "Novecento sans wide Light", sans-serif; 
+    color: #8a8888;
+    font-size: 0.85rem;
+    line-height: 1.571;
+    height: 2050px;
+    margin-bottom: 63px;
+}
+
+
+/**
+ * Tabs
+ */
+
+ 
+
+/**
+ * Contact
+ */
+
+
+
+ /**
+ * Layout
+ */
+
+
+
+ /**
+ * Logo & Navigation
+ */
+
+
+ /**
+ * Footer (sticky)
+ */
+
+
+ .footer {
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    padding-left: 16.7%;
+    color: rgb(165, 165, 165);
+}
+#footer-nav {
+    padding-right: 16.7%;
+}
+
+
+
+.logo {
+    margin: auto;
+    display: flex;
+    width: 940px;
+    height: 110px;
+    justify-content: space-between;
+}
+.display {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.icons {
+    grid-area: icons;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.icons svg {
+    padding: 0.2em;
+    align-self: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+.nav {
+    width: 940px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dadada;
+    margin: auto;
+}
+.nav h6 {
+    display: inline-block;
+    padding-right: 2.37em;
+    color: #737373;
+    font-family: 'novecento sans wide light';
+    padding-top: 0.5em;
+}
+a svg:hover #twitter {
+    fill: #38A1F3;
+}
+a svg:hover #facebook {
+    fill: #3c5a99;
+}
+a svg:hover #rss {
+    fill: #f26522;
+}
+a svg:hover #pinterest {
+    fill: #BD081C;
+}
+a svg:hover #google {
+    fill: #DD4B39;
+}
+a svg:hover #dribbble {
+    fill: #ea4c89 ;
+}
+
+p, ul, li {
+    font-family: Arial;
+}
+li {
+    list-style-image: url('../images/bullet.svg');
+}
+h1, h2, h3, h4, h4 a, h5, h6, .tab-links p, .footer p, #banner-text, #banner-button {
+    font-family: "Novecento sans wide Light";
+    font-weight: normal;
+    text-decoration: none;
+}
+a, a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
