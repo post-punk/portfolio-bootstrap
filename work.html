@@ -20,18 +20,6 @@
 
 <body>
 
-
-
-
-    <!-- <div class="call-to-action-video">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">video goes here</div>
-                
-            </div>
-        </div>
-    </div> -->
-
     <div class="header container">
         <!-- <div class=""> -->
         <div class="logo row justify-content-between ">
@@ -206,108 +194,95 @@
 
             </div>
         </div>
-        <hr>
+        <hr class="col-">
         <div class="nav row">
-            <h6 class="col-auto col-lg-1 col-xl-1 col-sm-2 col-md-2" id="nav-home"><a href="index.html">HOME</a></h6>
-            <h6 class="col-auto col-lg-1 col-xl-1 col-sm-2 col-md-2"><a href="about.html">ABOUT</a></h6>
-            <h6 class="col-auto col-lg-1 col-xl-1 col-sm-2 col-md-2"><a href="work.html">WORK</a></h6>
-            <h6 class="col-auto col-lg-1 col-xl-1 col-sm-2 col-md-2"><a href="contact.html">CONTACT</a></h6>
+            <h6 class="col-2 col-sm-2 col-md-1" id="nav-home"><a href="index.html">HOME</a></h6>
+            <h6 class="col-2 col-sm-2 col-md-1"><a href="about.html">ABOUT</a></h6>
+            <h6 class="col-2 col-sm-2 col-md-1"><a href="work.html">WORK</a></h6>
+            <h6 class="col-2 col-sm-2 col-md-1"><a href="contact.html">CONTACT</a></h6>
         </div>
 
 
 
     </div>
 
-    <!-- <div class="container-fluid banner"> -->
-    <div class="green-background container-fluid">
-        <img class="bg img-fluid" src="./images/banner-background.svg" />
-
-        <img class="macbook fade-in" alt="macbook" src="images/macbook.svg">
-
-        <img class="ipad fade-in" alt="ipad" src="images/ipad.svg">
-
-        <img class="iphone fade-in" alt="iphone" src="images/iphone.svg">
-        <br>
-    </div>
-
-    <div class="banner-paragraph row">
-        <p id="banner-text" class="col-12 wrap">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.
-            PELLENTESQUE EU ERATIUY LACUS,
-            VEL CONGUE MAURIS. FUSCE<BR>
-            VELITARIA JUSTO, FAUCIBUS EU.</p>
-        <div class="portfolio">
-            <button id="banner-button"><a href="about.html">BROWSE PORTFOLIO</a></button>
-        </div>
-    </div>
-
-
-    <!-- </div> -->
-    <div class="container-fluid" id="get-to-video">
+    <div class="container-fluid callout-top">
         <div class="container">
-            <div class="row">
-                <div class="video-thumbnail col-md-5">
-                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=H8Hh64jqk_I"><img
-                            src='./images/video-player-placeholder.svg/' alt="video player image"></a>
-                    <!-- <iframe width="380" height="230" <iframe width="560" height="315" src="https://www.youtube.com/embed/TB1H53zFyek"
-                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe></iframe> -->
-                </div>
-                <div class="video-text col-7">
-                    <h2>GET TO KNOW US A LITTLE BETTER!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue
-                        mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna
-                        mi,
-                        quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec
-                        sit
-                        amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit
-                        congue lacinia.</p>
-                    <p>Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque,
-                        id
-                        ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.</p>
+            <h1>CHECK OUT WHAT I CAN DO</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row work-nav justify-content-between">
+            <div class="work-nav-text col-sm-7 col-12">
+                <h4 id="all" onclick="removeItems('all')">ALL</h4>
+                <p>/</p>
+                <!--<h4 id="print" onclick="removeItemsExceptPrint()">PRINT</h4>	<p>/</p>-->
+                <h4 id="print" onclick="removeItems('print')">PRINT</h4>
+                <p>/</p>
+                <h4 id="photography" onclick="removeItems('photo')">PHOTOGRAPHY</h4>
+                <p>/</p>
+                <!--<h4 id="web" onclick="removeItemsExceptWeb()">WEB</h4>	<p>/</p>-->
+                <h4 id="web" onclick="removeItems('web')">WEB</h4>
+                <p>/</p>
+                <h4 id="apps" onclick="removeItems('app')">APPLICATIONS</h4>
+            </div>
+            <div class="col-sm-1 col-12">
+                <div class="work-nav-icons">
+                    <img onclick="toggleGrid()" id="grid-view" src="./images/grid-view-green.svg" />
+                    <img onclick="toggleList()" id="list-view" src="./images/list-view-gray.svg" />
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="col-xs-1" align="center">
-            <div id="featured-text">
-                <h2>A COUPLE OF OUR FEATURED PROJECTS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue
-                    mauris.
-                    Fusce velit<br></p>
-                <p>justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros.
-                </p>
-            </div>
+        <div class="row portfolio-grid">
+                <div class="cell grid-img web col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img1.png" />
+                </div>
+    
+                <div class="cell grid-img web col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img2.png" />
+                </div>
+    
+                <div class="cell grid-img photo col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img3.png" />
+                </div>
+    
+                <div class="cell grid-img print col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img4.png" />
+                </div>
+    
+                <div class="cell grid-img web col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img5.png" />
+                </div>
+    
+                <div class="cell grid-img app col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img6.png" />
+                </div>
+    
+                <div class="cell grid-img photo col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img7.png" />
+                </div>
+    
+                <div class="cell grid-img print col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img8.png" />
+                </div>
+    
+                <div class="cell grid-img web col-12 col-md-6 col-lg-4">
+                    <img src="images/work-grid-images/grid-img9.png" />
+                </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <img id="carousel-placeholder" class="img-fluid" src="images/carousel-placeholder.svg" />
-    </div>
-
-
-    <div class="container">
-        <div id="freebie">
-            <h4>DARK UI KIT FREEBIE</h4>
-            <br>
-            <!-- <div class="arrows"> -->
-            <div class="arrows-paragraph">
-                <img id="left-arrow" src="images/left-arrow-gray.svg" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, </p>
-                <img id="right-arrow" src="images/right-arrow-green.svg" />
-            </div>
-            <br>
-            <p>vel congue mauris. Fusce velit justo, faucibus eu sagittis.</p>
-        </div>
-    </div>
 
 
     <div class="container-fluid callout-btm">
         <div class="container">
             <div class="callout-btm row  justify-content-between">
                 <h2 id="are-you-ready" class="col-6">ARE YOU READY TO BE BLOWN AWAY?</h2>
-                <button type="button" class="action-btn col-" id="click-here"><a href="work.html">CLICK HERE TO FIND
+                <button type="button" class="action-btn col-auto" id="click-here"><a href="work.html">CLICK HERE TO FIND
                         OUT</a></button>
             </div>
         </div>
@@ -316,10 +291,10 @@
     <div class="footer container-fluid">
         <div class="container">
             <div class="row justify-content-between footer-wrapper">
-                <div class="col-sm-auto col-">
+                <div class="col-auto">
                     <p id="footer-copyright">COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED.</p>
                 </div>
-                <div class="col-sm-auto col-">
+                <div class="col-auto">
                     <p id="footer-nav"><a href="index.html">HOME</a> / <a href="about.html">ABOUT</a> / <a
                             href="work.html">WORK</a>
                         / <a href="contact.html">CONTACT</a></p>
@@ -341,6 +316,7 @@
     <script src="vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
     <script src="vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
     <script src="js/popup.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 
