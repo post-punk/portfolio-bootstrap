@@ -110,3 +110,55 @@ document.getElementById("defaultOpen").click();
 
 
 
+// carousel
+$(document).ready(function () {
+
+    $('.karusel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.karusel1'
+    });
+    $('.karusel1').slick({
+        variableWidth: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.karusel',
+        arrows: false,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1058,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    arrows: false,
+
+                    centerPadding: '30px'
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    arrows: false,
+
+                    centerPadding: '30px'
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+
+                    centerMode: true,
+                    centerPadding: '30px'
+                }
+            },
+        ]
+    });
+});
