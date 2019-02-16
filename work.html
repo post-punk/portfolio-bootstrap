@@ -3,7 +3,6 @@
 
 <head>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
@@ -12,8 +11,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="vendor/Magnific-popup-master/dist/magnific-popup.css">
-    <link rel="stylesheet" href="vendor/hamburges-master/dist/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Hello, world!</title>
 </head>
@@ -29,7 +26,7 @@
 
             <a class="nav-link dropdown-toggle navbar-expand-sm" href="#" id="navbarDropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Share this!
+                Social Media:
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="http://www.twitter.com" target="_blank"><svg
@@ -206,31 +203,29 @@
 
     </div>
 
-    <div class="container-fluid callout-top">
+    <div class="container-fluid d-flex align-items-center callout-top">
         <div class="container">
-            <h1>CHECK OUT WHAT I CAN DO</h1>
+            <h2>CHECK OUT WHAT I CAN DO</h2>
         </div>
     </div>
 
     <div class="container">
         <div class="row work-nav justify-content-between">
             <div class="work-nav-text col-sm-7 col-12">
-                <h4 id="all" onclick="removeItems('all')">ALL</h4>
-                <p>/</p>
-                <!--<h4 id="print" onclick="removeItemsExceptPrint()">PRINT</h4>	<p>/</p>-->
-                <h4 id="print" onclick="removeItems('print')">PRINT</h4>
-                <p>/</p>
-                <h4 id="photography" onclick="removeItems('photo')">PHOTOGRAPHY</h4>
-                <p>/</p>
-                <!--<h4 id="web" onclick="removeItemsExceptWeb()">WEB</h4>	<p>/</p>-->
-                <h4 id="web" onclick="removeItems('web')">WEB</h4>
-                <p>/</p>
-                <h4 id="apps" onclick="removeItems('app')">APPLICATIONS</h4>
+                <h6 id="all" onclick="removeItems('all')">ALL</h6>
+                <h6 id="slash">/</h6>
+                <h6 id="print" onclick="removeItems('print')">PRINT</h6>
+                <h6 id="slash">/</h6>
+                <h6 id="photography" onclick="removeItems('photo')">PHOTOGRAPHY</h6>
+                <h6 id="slash">/</h6>
+                <h6 id="web" onclick="removeItems('web')">WEB</h6>
+                <h6 id="slash">/</h6>
+                <h6 id="apps" onclick="removeItems('app')">APPLICATIONS</h6>
             </div>
             <div class="col-sm-1 col-12">
-                <div class="work-nav-icons">
-                    <img onclick="toggleGrid()" id="grid-view" src="./images/grid-view-green.svg" />
-                    <img onclick="toggleList()" id="list-view" src="./images/list-view-gray.svg" />
+                <div class="work-nav-icons ">
+                    <img onclick="toggleGrid()" id="grid-view" src="./images/grid-view.svg" />
+                    <img onclick="toggleList()" id="list-view" src="./images/list-view.svg" />
                 </div>
             </div>
         </div>
@@ -238,47 +233,47 @@
 
     <div class="container">
         <div class="row portfolio-grid">
-                <div class="cell grid-img web col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img1.png" />
-                </div>
-    
-                <div class="cell grid-img web col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img2.png" />
-                </div>
-    
-                <div class="cell grid-img photo col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img3.png" />
-                </div>
-    
-                <div class="cell grid-img print col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img4.png" />
-                </div>
-    
-                <div class="cell grid-img web col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img5.png" />
-                </div>
-    
-                <div class="cell grid-img app col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img6.png" />
-                </div>
-    
-                <div class="cell grid-img photo col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img7.png" />
-                </div>
-    
-                <div class="cell grid-img print col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img8.png" />
-                </div>
-    
-                <div class="cell grid-img web col-12 col-sm-6 col-lg-4 img-hover">
-                    <img src="images/work-grid-images/grid-img9.png" />
-                </div>
+            <div class="cell grid-img web col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img1.png" />
+            </div>
+
+            <div class="cell grid-img web col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img2.png" />
+            </div>
+
+            <div class="cell grid-img photo col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img3.png" />
+            </div>
+
+            <div class="cell grid-img print col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img4.png" />
+            </div>
+
+            <div class="cell grid-img web col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img5.png" />
+            </div>
+
+            <div class="cell grid-img app col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img6.png" />
+            </div>
+
+            <div class="cell grid-img photo col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img7.png" />
+            </div>
+
+            <div class="cell grid-img print col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img8.png" />
+            </div>
+
+            <div class="cell grid-img web col-12 col-sm-6 col-lg-4 col-xl-4">
+                <img class="img-fluid" src="images/work-grid-images/grid-img9.png" />
+            </div>
         </div>
     </div>
 
 
 
-    <div class="container-fluid callout-btm">
+    <div class="container-fluid d-flex align-items-center callout-btm">
         <div class="container">
             <div class="callout-btm row  justify-content-between">
                 <h2 id="are-you-ready" class="col-6">ARE YOU READY TO BE BLOWN AWAY?</h2>
@@ -313,9 +308,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <script src="vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
-    <script src="js/popup.js"></script>
     <script src="./js/app.js"></script>
 
 </body>
