@@ -8,6 +8,8 @@ $(".slider-img").slick({
   focusOnSelect: true,
   arrows: false,
   variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   slickPrev: $('.slick-prev'),
   slickNext: $('.slick-next')
   });
@@ -17,6 +19,8 @@ $(".slider-img").slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   asNavFor: '.slider-img'
   });
 
